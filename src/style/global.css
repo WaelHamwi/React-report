@@ -1,0 +1,207 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #e74c3c;
+    --accent-color: #f39c12;
+    --success-color: #2ecc71;
+    --info-color: #8e44ad;
+    --warning-color: #f1c40f;
+    --danger-color: #c0392b;
+    --light-bg-color: #ecf0f1;
+    --dark-bg-color: #2c3e50;
+    --gradient-bg: linear-gradient(90deg, #ff6b6b, #f7b733);
+    --dark-bg-color: #2a2e35;
+    --charcoal-bg-color: #36454f;
+    --midnight-blue-bg-color: #191970;
+    --dark-cyan-bg-color: #008b8b;
+    --gunmetal-bg-color: #2a3439;
+    --rich-black-bg-color: #0d0d0d;
+    --deep-space-blue-bg-color: #1b1f24;
+    --dark-olive-green-bg-color: #556b2f;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff6b6b, #f7b733);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    line-height: 1.2;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color: #007bff;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: var(--light-bg-color);
+    color: var(--charcoal-bg-color);
+}
+
+.chart-container {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--light-bg-color);
+}
+
+.chart-container.tablet {
+    max-width: 400px;
+}
+
+.chart-container.mobile {
+    max-width: 400px;
+}
+
+
+.chart-container {
+    margin-bottom: 100px;
+}
+
+.chart-container .chart {
+    flex: 1 1 300px!important;
+    text-align: center;
+    background-color: var(--light-bg-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.chart-container .chartDesktop {
+    max-width: 300px;
+}
+
+.chart-container .chartMob {
+    display: flex;
+    justify-content: center;
+    width: 400px !important;
+
+}
+
+.chart-container .chartTablet {
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    max-width: 350px;
+}
+
+
+.chart-container .chart:hover {
+    transform: scale(1.05);
+}
+
+/*bar responsive starts*/
+.barMob {
+    width: 400px !important;
+}
+
+.barTablet {
+    width: 700px !important;
+}
+
+
+
+.barDesktop {
+    width: 700px !important;
+}
+
+/*bar responsive ends*/
+
+/* Responsive styles for both verticalBar and line charts */
+
+/* Mobile styles */
+.verticalBarMob,
+.lineMob {
+    width: 500px !important;
+}
+
+/* Tablet styles */
+.verticalBarTablet,
+.lineTablet {
+    width: 700px !important;
+}
+
+/* Desktop styles */
+.verticalBarDesktop,
+.lineDesktop {
+    width: 900px !important;
+}
+
+@media only screen and (max-width: 450px) {
+    .chart-container {
+        width: 100%!important;
+    }
+    .chart {
+        width: 90%!important;
+    }
+  
+   
+}
+.verticalBarMob {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+}
+
+.verticalBarMob canvas {
+    width: 400px!important;
+    height: 400px!important;
+    display: block;
+    image-rendering: auto;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.verticalBarMob {
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+    .chart-container .chart {
+        flex: 1 1 400px;
+    }
+}
