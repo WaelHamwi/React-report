@@ -2,7 +2,7 @@
 
 Welcome to the **Reporting Dashboard** project! This application is designed to provide an interactive and visually appealing interface for data visualization using charts.
 
-![Dashboard Preview](link_to_your_image_here) <!-- Replace with a link to an image of your dashboard -->
+![Dashboard Preview]([link_to_your_image_here](https://drive.google.com/drive/folders/10VgSNQT6gmBTp3WHSBE2c6czpJ2CsbO5))
 
 ---
 
